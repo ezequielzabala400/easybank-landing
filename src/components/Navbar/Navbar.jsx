@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { LogoContainer, MenuIconContainer, NavbarButton, NavbarLink, NavbarLinksContainer, NavbarWrapper, Overlay } from './NavbarStyles'
 import Logo from '../../../public/assets/img/logo.svg';
 import MenuIcon from '../../../public/assets/img/icon-hamburger.svg'
@@ -6,8 +6,15 @@ import CrossIcon from '../../../public/assets/img/icon-close.svg'
 const Navbar = () => {
 
     const [isToggle, setIsToggle] = useState(false)
-
+    
     const handleNavbarMenu = () => setIsToggle(!isToggle);
+
+    const scrollCloseMenu = () => {
+        if(isToggle === false) return;
+        setIsToggle(!isToggle)
+    }
+
+        document.addEventListener('scroll', scrollCloseMenu)
 
   return (
     <NavbarWrapper>

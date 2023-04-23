@@ -54,7 +54,7 @@ export const HeroInfoContainer = styled.div`
 `
 
 export const HeroTitle = styled.h1`
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     text-align: center;
     color: var(--DarkBlue);
     font-weight: 400;
