@@ -1,6 +1,6 @@
 import React from 'react'
 import { ButtonContainer, FooterContainer, FooterIcons, FooterIconsContainer, FooterLinks, FooterWrapper, Icon } from './FooterStyles'
-import Logo from '../../../public/assets/img/logoWhite.svg'
+import Logo from '../../../public/assets/img/LogoWhite.svg'
 import {FaFacebook} from 'react-icons/fa'
 import {FaYoutube} from 'react-icons/fa'
 import {FaTwitter} from 'react-icons/fa'
