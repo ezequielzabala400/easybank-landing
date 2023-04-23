@@ -18,7 +18,7 @@ export const HeroImageContainer = styled.div`
     top: 70px;
     height: 40%;
     width: 100%;
-    background-image: url('../../../public/assets/img/bg-intro-mobile.svg');
+    background-image: url(${({image}) => image});
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -80,7 +80,7 @@ export const HeroParagraph = styled.p`
 `
 
 export const HeroImageDesktop = styled.div`
-    background-image: url('../../../public/assets/img/bg-intro-desktop.svg');
+    background-image: url(${({image}) => image});
     width: 50%;
     order: 2;
     overflow: hidden;
